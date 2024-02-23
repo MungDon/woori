@@ -30,10 +30,6 @@ class BBB extends AAA{
 		System.out.println("super : "+super.x);	//AAA클래스 x
 	}
 }
-
-
-
-
 public class InheritanceEx03 {
 
 	public static void main(String[] args) {
