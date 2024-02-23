@@ -1,4 +1,5 @@
-package day0223;
+package day0223.practice;
+
 /*
   		상속
   		 - 조상 클래스의 private 멤버(변수, 메서드) 상속 불가

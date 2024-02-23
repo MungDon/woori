@@ -1,4 +1,5 @@
-package day0223;
+package day0223.practice;
+
 /*people 클래스의 자손클래스
  * 
  * 자신객체만 생성되는 것처럼 보이지만

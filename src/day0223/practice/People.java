@@ -1,4 +1,4 @@
-package day0223;
+package day0223.practice;
 /*Student 의 조상클래스*/
 public class People {
 	

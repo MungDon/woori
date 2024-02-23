@@ -1,4 +1,4 @@
-package day0223;
+package day0223.practice;
 
 /*
  		TvPhone 클래스의 조상 클래스

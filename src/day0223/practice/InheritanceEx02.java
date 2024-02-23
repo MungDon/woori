@@ -1,4 +1,5 @@
-package day0223;
+package day0223.practice;
+
 /*student 의 실행클래스*/
 public class InheritanceEx02 {
 

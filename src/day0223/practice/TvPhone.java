@@ -1,4 +1,5 @@
-package day0223;
+package day0223.practice;
+
 /*
  		Phone 의 자손클래스
   */
