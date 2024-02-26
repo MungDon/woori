@@ -39,14 +39,14 @@ class Cat extends Animal {
 public class PollymorphismEx02 {
 	public static void main(String[] args) {
 		PollymorphismEx02 p = new PollymorphismEx02();	
-		p.animalMove(new Tiger()); // 상속한 자손객체를 매개변수로 넣어서 오버라이드 된걸 확인 Animal animal = new Tiger();와 같음
+		p.animalMove(new Tiger()); 					// 상속한 자손객체를 매개변수로 넣어서 오버라이드 된걸 확인 Animal animal = new Tiger();와 같음
 //		Human h = new Human();
 //		Animal a1 = h;
 //		a1.move();
 //		Tiger t = new Tiger();
 //		Cat c = new Cat();
 	}
-	public void animalMove(Animal animal) {		// Animal 타입의 매개변수를 받아 public void move(){};를 호출하는 메서드 
+	public void animalMove(Animal animal) {	// Animal 타입의 매개변수를 받아 public void move(){};를 호출하는 메서드 
 		animal.move();
 	}
 }

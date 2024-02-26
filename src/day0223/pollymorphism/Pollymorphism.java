@@ -16,12 +16,15 @@ class E extends C{}
 
 public class Pollymorphism {
 	public static void main(String[] args) {
-		B b = new B();
+		A a = new A();
+		A a0 = new B();
+		System.out.println(a);
+		System.out.println(a0);
+		
 		C c = new C();
 		D d = new D();
 		E e = new E();
 	
-		A a1 = b;
 		A a2 = c;	//C가 A를 상속받기에 대입가능
 		A a3 = d; 	//B가 A를 상속받고 D가 B를 상속받기에 대입가능
 		A a4 = e;	//C가 A를 상속받고 E가 C를 상속받기에 대입가능
