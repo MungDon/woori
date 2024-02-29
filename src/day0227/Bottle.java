@@ -32,10 +32,10 @@ public class Bottle {
 	}
 	
 	public void info() {
-<<<<<<< HEAD
+
 		System.out.println(texture+"지름 "+dia+"높이 "+hight+"색상"+color+"문구 "+text);
-=======
+
 		System.out.println("재질 "+texture+"지름 "+dia+"높이 "+hight+"색상"+color+"문구 "+text);
->>>>>>> 7f959cc74b2425a783f7217f40a7dd24416cb0f6
+
 	}
 }

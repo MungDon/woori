@@ -8,10 +8,6 @@ public class E {
 	t1.info();
 	t2.info();
 	t3.info();
-<<<<<<< HEAD
-	
-=======
->>>>>>> 7f959cc74b2425a783f7217f40a7dd24416cb0f6
 	}
 
 }
