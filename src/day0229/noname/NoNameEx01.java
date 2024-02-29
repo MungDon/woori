@@ -16,7 +16,7 @@ package day0229.noname;
  		
  		};
  */
-public class NoNameEx {
+public class NoNameEx01 {
 	public static void main(String[] args) {
 		RemoteControl rc = new RemoteControl() {
 			public void turnOn() {
