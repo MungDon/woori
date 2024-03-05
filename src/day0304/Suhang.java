@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Suhang {
 
 	public static void main(String[] args) {
+		
 		Scanner scanner = new Scanner(System.in);
 		double[] arr = new double[5];
 		double result = 0;
