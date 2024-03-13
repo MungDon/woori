@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html >
+ <head>
+
+  <title>Document 14_1</title>
+ </head>
+ <body>
+ 	<h2>type="text"</h2>
+	<h3>INPUT의 디폴트 type="text"이고, 데이터를 입력하면 textname의 value="입력데이터"가 된다 </h3>
+	<FORM>
+		단순 텍스트 : <INPUT type="text" name="textname" /><br/>
+	</FORM>
+	<h3>글자 수 와 크기 지정가능 size ="10" maxlength="20" 지정가능</h3>
+
+	<FORM>
+		입력 : <INPUT type="text" name="textname1" value="지장값"size ="10" maxlength="20" /><br/>
+	</FORM>
+
+	<h2>type="password"</h2>
+	<FORM>
+		비밀번호<INPUT type="password" name="pw" /><br/>
+	</FORM>
+
+	<h2>type="checkbox" type="radio"</h2>
+	<h3>최초값을 지정. checked</h3>
+	<h3>라디오 버튼은한가지만 선택가능, 선택 항목들의 name은 같아야하고, value는 각각 달라야한다</h3>
+	<FORM>
+		<strong>현재 살고 있는곳은?</strong><br/>
+		<INPUT type="radio" name="living" value="seoul" checked />서울<br/>
+		<INPUT type="radio" name="living" value="inchen" />인천<br/>
+		<INPUT type="radio" name="living" value="deagu" />경기<br/>
+		<br/>
+		<strong>결혼 하였는가?</strong><br/>
+		<INPUT type="radio" name="marry" value="yes" />기혼<br/>
+		<INPUT type="radio" name="marry" value="no" />미혼<br/>
+		<br/>
+		<strong>가보고 싶은곳은??</strong><br/>
+		<INPUT type="checkbox" name="city1" value="Y">로마 <br/>
+		<INPUT type="checkbox" name="city2" value="Y">스위스<br/>
+		<INPUT type="checkbox" name="city3" value="Y">파리<br/>
+		<INPUT type="checkbox" name="city3" value="Y" checked>영국<br/>
+	</FORM>
+	<h3>서울 미혼 파리만 선택했을 경우 이동되는 값</h3>
+	liiving = seoul, marry=no, city3=Y<br/>
+	<h2>type="button"</h2>
+		- type="button" 은 입력 버튼을 만들고, type="image" 는 이미지 연결하여 이벤트를 작동하게 한다<br/>
+	<br/>
+	<FORM>
+		기본 버튼 : <input type="button" name="buttonName" value="확인" /><br/><br/>
+		이미지 :<br/><input type="image" name="imageName" 
+			src="C:/Program Files/sung/web/img/sky2.jpg"
+			onClick="alert('초승달')" /><br/>
+	</FORM>
+	<br/>
+	<br/>
+	<h2>type="hidden"</h2>
+	<H3>브라우저에 보이지 않게 변수를 전달 할 때 사용 된다</H3>
+	<form>
+	보이지 않음 : <INPUT type="hidden" name="hiddenName" value="감춰 전달 되는 값" /><br/>
+	눌러서 확인 : <input type="button" name="hiddenButton" value="감춰진 값 보기" onClick="alert('감춰진 값 보기')" />
+	</form>
+ 
+ </body>
+</html>
