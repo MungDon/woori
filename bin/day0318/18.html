@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Document 18</title>
+  <style>
+	body{
+		text-align : center;
+	}
+	h1{
+		border : 1px solid black;
+	}
+	h3{
+		border : 1px solid darkgray;
+	}
+  </style>
+ </head>
+ <body>
+	<h1>구.구.단</h1>
+	<script>
+		var i;
+		var j;
+		for(i=2; i<=9; i++){
+			document.write("<br>");
+			document.write("<h3>"+i+"단</h3>");
+			for(j=1; j<=9; j++){
+				var result = i*j;
+				document.write(i+" x "+j+" = <strong>"+result+"</strong><br />");
+			}
+		}
+
+	</script>
+ </body>
+</html>

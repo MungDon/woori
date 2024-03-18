@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Document 30</title>
+ </head>
+ <!--
+	전연 변수, 지역변수 사용
+		개발자 도구의 콘솔창 확인
+ -->
+ <body>
+	<script>
+		function addNumber(){
+			var sum = 10 + 20;	// 지역변수
+			multi = 10 * 20;		// 전역변수
+		}
+		addNumber();
+		console.log(multi);
+	</script>
+ </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Document 21</title>
+ </head>
+ <!--
+	팩토리얼 계산 프로그램
+		팩토리얼 : 1부터 n까지 곱한 결과
+		예) 3의 팩토리얼 : 1*2*3
+		n 변수 입력받아서
+		i 카운터변수
+ -->
+ <body>
+ 	<h1>whlie문을 사용한 팩토리얼 계산</h1>
+	<script>
+		var n = prompt();
+		var i = 1;
+		var result = 1;
+		var msg = "";
+
+		if(n !== null){
+			document.write("<br>");
+			while(i <= n){
+				result *= i;
+				i++;
+			}			
+			msg = n+"! =" +result;
+		}else{
+			msg = "값을 입력하지않았습니다"
+		}
+			document.write(msg);
+	</script>
+ </body>
+</html>

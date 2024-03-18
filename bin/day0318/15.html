@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Document 15</title>
+ </head>
+ <!--
+	자리 배치 
+	입장객 수 , 한줄에 앉을 인원 -> 입력 받고
+	총 몇줄이 필요한지 
+
+	입력 변수		: 입장객 수memNum,  한줄에 앉을 인원 colNum
+	계산 변수		: 필요한 줄의 개수  rowNum
+
+	나머지 있으면 줄 + 1
+ -->
+ <body>
+  <script>
+		var memNum = prompt("입장객수");
+		var colNum	 = prompt("한줄의 앉을 인원");
+		var rowNum;
+
+		var mn = parseInt(memNum);
+		var cn = parseInt(colNum);
+
+		if(memNum !== null && colNum !== null){
+			rowNum = mn / cn;
+			if(mn % cn !== 0){
+				rowNum ++;
+			}
+			document.write("<h1>입장객 수는</h1><strong>"+mn+"</strong>이고<br><h1>한줄의 앉을 인원은</h1><strong>"+cn+"</strong>입니다<br>");
+			document.write("<h1>따라서 필요한 줄의 개수는</h1><strong>"+rowNum.toFixed(0)+"</strong>입니다");
+		}
+
+  </script>
+ </body>
+</html>
+<!--
+	prompt()문은 입력받은 값을 문자열로 저장.
+	산술연산에 사용할 경우 자동으로 숫자형으로 변환된다.
+	그러나 예상치 못한 곳에서 다르게 변환할 수 있다
+	따라서 parseInt() 함수를 사용
+	parseInt() 함수는 괄호안에 값을 정수로 변환한다.
+
+-->

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Document 09</title>
+ </head>
+ <body>
+ <!--
+		입력창 prompt();
+			: 아무것도 쓰지 않더라도 입력을 누르면 값이 넘어간다.
+			: 공백도 값이다
+			: 즉, 기본값이 null이 아니다
+			: 취소를 눌러야만 null이다
+-->
+  <script>
+		var userNumber = prompt("숫자를 입력하세요");
+		// prompt() : 기본값이 null아 아님
+			// 취소시에null반환
+		if(userNumber === null){
+			if(userNumber % 3 === 0){
+				alert("3의 배수 입니다");
+			}else{
+				alert("3의 배수가 아닙니다");
+			}
+		}else{
+			alert("입력이 취소되었습니다") // 값이 null 일경우
+		}
+
+  </script>
+ </body>
+</html>

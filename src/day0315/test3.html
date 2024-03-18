@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+	.container{
+		display : flex;
+		flex-direction : column;
+		align-items : center;
+	}
+  	.main{
+		width : 800px;
+		border : 1px solid black;
+		height : 800px; 
+	}
+	header{
+		height : 15%;
+		background-color : black;
+		border : 1px solid black;
+	}
+	.table1{
+		margin-top : 10px;
+		width : 100%;
+		height : 25%;
+		border : 1px solid black;
+	}
+	.table1 > tr, td{
+		border : 1px solid black;
+	}
+	.no1, .no3, .no5{
+		width : 60%;
+	}
+	.no1{ height : 30%;}
+	.no3{ height : 45%;}
+	.no5{ height : 25%;}
+	.no2{ height : 30%;}
+	.no4{ height : 70%;}
+	.no2, .no4{width : 40%;	}
+  </style>
+ </head>
+ <body>
+ 	<div class="container">
+		<div class="main">
+			<header></header>
+			<table class="table1">
+				<tr>
+					<td class="no1" colspan="2">as
+					<td class="no2">asd
+				</tr>
+				<tr>
+					<td  class="no3" colspan="2">assa
+					<td class="no4" rowspan="2">sasa
+				</tr>
+				<tr>
+					<td  class="no5" colspan="2">sasa
+				</tr>
+			</table>
+		</div>
+	</div>
+ </body>
+</html>

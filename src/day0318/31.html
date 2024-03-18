@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <!--
+	변수의 재선언과 재할당
+		- > 콘솔에서 결과 확인
+ -->
+ <body>
+	<script>
+		function addNumber(num1, num2){
+			return num1+num2;
+		}
+		var sum = addNumber(10, 20); // sum 변수 선언, 함수 호출
+		console.log(sum);
+
+		sum = 50;					// 값 재할당
+		console.log(sum);
+
+		var sum = 100;				// 변수 재선언
+		console.log(sum);
+	</script>
+ </body>
+</html>

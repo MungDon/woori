@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Document 29</title>
+ </head>
+ <!--
+ 	컨트롤 시프트 j
+		: 브라우저 상의 개발자 도구의 콘솔창으로 바로감
+	지역 변수 sum 을 함수 밖에서 사용 -> 에러
+ -->
+ <body>
+  <script>
+		function addNumber(){
+			var sum = 10+20;
+		}
+		addNumber();
+	//	console.log(sum);	// 함수안에 지역변수를 호출했기에 오류발생
+  </script>
+ </body>
+</html>

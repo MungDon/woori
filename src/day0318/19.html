@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Document</title>
+  <link href="C:/Program Files/sung/web/day0318/css/gugudan.css" rel="stylesheet">
+ </head>
+ <body>
+ 	<div class="main">
+	  <h1>구.구.단</h1>
+		<script>
+			var i;
+			var j;
+			for(i=2; i<=9; i++){
+				document.write("<div><h3>"+i+"단</h3>");
+				for(j=1; j<=9; j++){
+					var result = i*j;
+					document.write(i+" x "+j+" = <strong>"+result+"</strong><br />");
+				}
+				document.write("</div>");
+			}
+
+		</script>
+	</div>
+ </body>
+</html>

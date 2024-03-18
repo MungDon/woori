@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+  		.container{
+				display : flex;
+				flex-direction : column;
+				align-items : center;
+		}
+		  header{
+			background-color: black;
+			padding: 20px 0px;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			flex-direction:column ;
+			color: aliceblue;
+			border-bottom: 1px solid #e2e2e2;
+		}
+		header > span {
+			font-weight : bolder;
+			font-size : 50px;
+			color : white;
+		}
+		table{
+			text-align: center;
+			border-collapse: collapse;
+			margin-top : 100px;
+			width : 800px;
+			font-size : 40px;
+			border-spacing: 0px;
+			height : 300px;
+			}
+
+		  tr{border-top : 1px solid darkgray;}
+
+		  .headLine{border-top : 2px solid black}
+
+		  .num{width : 20%;}	
+
+		  .title{width : 20%;}
+		  
+		  .writer{width : 20%;}
+		  
+		  .createdDates{width : 40%;}
+
+  </style>
+ </head>
+ <body>
+ 	<header>
+		<span>내 정보</span>
+	</header>
+		<div class="container">
+			<table>
+				<tr class="headLine">
+					<th class="name">회원명
+					<th class="gender">성별
+					<th class="writer">생년월일
+					<th class="createdDate">가입일시
+				</tr>
+				<tr class="headLine" style="border-bottom : 1px solid darkgray">
+					<td class="num">성민형
+					<td class="title">남자
+					<td class="writer">2000/10/22
+					<td class="createdDate">2023-11-31 00:00
+				</tr>
+			</table>
+			<a href="file:///C:/Program%20Files/sung/web/day0314/01.html">돌아가기</a>
+		</div>
+ </body>
+</html>

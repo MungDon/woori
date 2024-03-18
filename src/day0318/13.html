@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Document 13</title>
+ </head>
+ <!--
+	논리 연산자 사용
+		! : not 연산자
+ -->
+ <body>
+  <script>
+	var numberOne = prompt("50미만의 숫자를 입력해주세요");
+	var numberTwo = prompt("50미만의 숫자를 입력해주세요");
+
+	if( numberOne !== null && numberTwo !== null){
+		if(numberOne <50 || numberTwo < 50){
+			alert("두 개의 숫자중 최소 하나는 50 미만이군요");
+		}else{
+			alert("두 개의 숫자 중 50미만인 수는 없습니다.");
+		}
+	}else{
+		alert("50 미만의 숫자를 입력해주세요");
+	}
+  </script>
+ </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Document 24</title>
+ </head>
+ <!--continue문 사용-->
+ <body>
+  <h1>짝수의 합</h1>
+  	<script>
+		var input = prompt();
+		var result = 0;
+		var i;
+
+		document.write("<h1>입력받은값  : "+input + "</h1><br>");
+		document.write(input +"<strong>까지의 모든 짝수 : </strong><br>");
+		for(i = 2; i < input; i++){
+			if(i % 2 !== 0){
+				continue;
+			}
+			document.write(i+" ");
+			result += i;
+			
+		}
+		document.write("<br><br> <h1>짝수들의 합 : "+result+"</h1>");
+	</script>
+ </body>
+</html>

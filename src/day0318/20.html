@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <link href="C:/Program Files/sung/web/day0318/css/gugudan-table.css" rel="stylesheet">
+ </head>
+ <body>
+	  <center><h1>구.구.단</h1></center>
+		<script>
+			var i;
+			var j;
+			for(i=2; i<=9; i++){
+				document.write("<table>");
+				document.write("<tr><th>"+i+"단</th></tr>");
+				for(j=1; j<=9; j++){
+					var result = i*j;
+					document.write("<tr><td>"+i+" x "+j+" = "+result+"</td></tr>");
+				}
+				document.write("</table>");
+			}
+
+		</script>
+ </body>
+</html>

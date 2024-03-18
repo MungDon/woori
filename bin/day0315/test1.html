@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document e</title>
+   <style>
+   		.container{
+			display : flex;
+			flex-direction : column;
+			align-items : center;
+		}
+		.main{
+			border-radius : 10px;
+			padding : 20px;
+			width : 500px;
+			background-color : #86B404;
+			display : flex;
+			flex-direction : column;
+			align-items : center;
+		}
+		.strong{
+		
+			width : 500px;
+			margin-bottom : 20px;
+		}
+		.joinForm{
+			width : 500px;
+		}
+
+		.joinForm > input[type=submit]{
+			color: white;
+			background-color : #173B0B;
+			font-size : 17px;
+			padding : 5px;
+			width : 80px;
+			margin-left : 200px;
+			margin-top : 7px;
+			border-style : none;
+			border-radius : 20px;
+		} 
+		.joinForm > div {
+			background-color :#CEF6CE;
+			border-radius : 15px;
+			border-style : double;
+			margin : 5px 0 5px 0;
+			border : 3px solid #F5FBEF;
+			padding : 10px;
+		}
+		.joinForm > div > input{
+			width : 230px;
+			margin-left : 10px;
+			border-radius : 5px;
+			border-style : hidden;
+		}
+		button{
+			color :#585858;
+			font-weight : bold;
+			border : 1px solid darkgray;
+			border-radius : 5px;
+		}
+
+   </style>
+ </head>
+ <body>
+ 	<div class="container">
+		<div class="main">
+			<div class="strong">
+				<strong>회원 가입 정보</strong><br>
+			</div>
+				<form class="joinForm">
+					<div>아이디<input type="text" name="userId" /></div>
+					<div>비빌먼호<input type="password" name="userPassword" /></div>
+					<div>비밀번호 확인<input type="password" name="passwordChk" /></div>
+				<div>회원 등급<input type="text" name="role" value="준회원"/></div>
+					<div>이름<input type="text" name="name" /></div>
+					<div>메일주소<input type="email" name="email" placeholder="예)aaa@naver.com" /></div>
+					<div>연락처<input type="tel" name="userNumber" /></div>
+					<div>가입날짜<input type="date" name="createdDate" /></div>
+					<div>좋아하는 숫자<input type="text" name="num" /></div>
+					<div>우편번호검색<input type="text" name="upeon" />
+					<button type="button" onclick="hrefUpeon()">우편번호 찾기</button></div>
+					<h3>코딩 숙련도(상,중,하)</h3>
+					<div><input type="range" name="programionig" /></div>
+					<input type="submit" value="제출">
+				</form>
+			</div>
+		</div>
+	<script>
+		function hrefUpeon(){
+			location.href="https://www.epost.go.kr/search.RetrieveIntegrationNewZipCdList.comm";
+		}
+	</script>
+ </body>
+</html>
