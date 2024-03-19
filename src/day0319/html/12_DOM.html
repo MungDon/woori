@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Document</title>
+ </head>
+ <body>
+	* DOM	: (Document Object Model)
+		- 자바스크립트를 이용하여 웹 문서에 접근하고
+			제어할 수 있도록 객체를 사용해 웹 문서를 체계적으로 정리하는 방법이다.
+	
+	* DOM
+		- 웹 문서 자체를 하나의 객체로 정의한다
+		- 웹 문서를 다루는 텍스트, 이미지, 표 등 각각의 요소들도 객체로 정의한다.
+		- 웹 문서 전체는 document 객체이고,
+			삽입한 이미지 image 객체
+
+	* DOM 요소에 접근하고 속성 가져오기
+		- id 선택자로 접근
+			: html 태그의 id속성은 html 요소가 문서 안에서 중복되지 않도록 사용하는 css 선택자
+			getElementById()를 이용하면 특정한 id가 포함된 DOM 요소에 접근할 수 있다
+
+			document.getElementById("#id명");
+
+		- class 값으로 접근
+				: 지정한 class 선택자 이름이 들어있는 DOM 요소에 접근할 수 있다.
+			
+			document.getElementByClassName(".클래스명");
+
+		- 태그 이름으로 접근
+			:  class 나 id 를 지정하지 않은 DOM요소에 접근하려면 태그를 이용.
+			:  복수형 Elements
+			예) 웹 문서 내의 모든 p 태그에 적용
+
+			document.getElementsByTagName("태그명");
+			
+		- 다양한 방법으로 접근 
+			querySelector() 메서드 사용
+				: id 선택자 처럼 반환 값이 하나인 경우.
+
+			querySelectorAll() 메서드 사용
+				: class 선택자나 태그이름을 사용하여 여러값이 한번에 반환될 경우
+
+				: 선택자를 표시할 때!
+				id 이름 앞에 해시기호(#)를 붙이고
+				class 이름앞에 마침표(.)를 붙인다
+				태그는 기호없이 태그명만사용
+
+				querySelector() 메서드에서 class 이름으로 접근할때 
+					class 이름을 사용한 여러 요소 중에서 첫번째 요소만 반환을한다.
+
+			- 속성을 가져오거나 수정하는 getAttibute(), setAtrribute()
+				: 웹 요쇼를 문서에 삽입 할때 태그속성을 함께 사용하면
+					DOM 트리에 노드가 추가되면서 속성 값이 저장된다.
+
+					getAtrribute("속성명");
+
+					setAtrribute("속성명", "값");
+
+			- 트리 노드 루트
+				: 부모와 자식을 구조로 표시하면 마치 나무 형태와 같다하여 트리구조 라고한다
+				노드(node)			: 트리에서 가지가 갈라져 나온 항목.
+				루트노드(root node)	: 트리의 시작부분인 노드는 나무 뿌리에 해당한다.
+				각 노드 사이에는 관계를 부모-자식, 형제가능로 표현가능
+				부모(parent) 노드에는 자식(child)노드가 있고,
+				부모 노드가 같은 형제(sibling) 노드도 있다
+
+ </body>
+</html>

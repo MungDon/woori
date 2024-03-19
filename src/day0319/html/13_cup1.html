@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Document</title>
+  <style>
+	#container{
+		width : 300px;
+		margin : 10px auto;
+	}
+  </style>
+ </head>
+<!--
+	이벤트 처리기 함수가 간단하다면
+	DOM요소에 직접 연결 
+-->
+ <body>
+	<div id="container">
+		<img src="C:/Program Files/sung/web/images/cup1.png" id="cup">	 
+	</div>
+	<script>
+		var cup = document.querySelector("#cup");
+		cup.onclick = function(){
+			alert("이미지를 클릭했습니다");
+		}
+	</script>
+ </body>
+</html>

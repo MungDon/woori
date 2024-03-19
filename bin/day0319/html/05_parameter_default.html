@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Document</title>
+  <style>
+
+	body{
+		padding-top : 20px;
+		text-align : center;
+	}
+  </style>
+ </head>
+ <!--
+	매개변수 기본값 지정하기
+		: 함수에서 매개변수 지정할때 기본값을 지정한다.
+ -->
+ <body>
+	<script>
+		function multiple(a, b=5, c=10){ // b = 5, c = 10 으로 기본값지정
+			return a*b+c;
+		}
+		var result = multiple(5, 5, 10); 
+		// 함수 호출할대 인수 a=5, b와c는 넘겨받은 기본값!
+		document.write("<h1>multiple(5,5,10)을 실행하면"+result+"입니다</h1><br>");
+
+		var result2 = multiple(10,20);
+		document.write("<h1>multiple(10,20)을 실행하면 세번째 매개변수는 기본값을 사용하고 결과는 "+result2+"입니다</h1><br>");		
+		
+		var result3 = multiple(30);
+		document.write("<h1>multiple(30)을 실행하면 두번째와 세번째 매개변수는 기본값을 사용하고 결과는 "+result3+"입니다</h1><br>");
+	</script>
+ </body>
+</html>

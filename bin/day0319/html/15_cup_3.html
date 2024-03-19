@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  	<div id="container">
+		<img src="C:/Program Files/sung/web/images/cup1.png" id="cup">	 
+	</div>
+	<script>
+		var cup = document.querySelector("#cup");
+		cup.onclick = function(event){
+			alert("이벤트 유형"+event.type+", 이벤트 발생 위치 : "+event.pageX+","+event.pageY);
+		}
+	</script>
+ </body>
+</html>

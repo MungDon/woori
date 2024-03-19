@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Document</title>
+      <link rel="stylesheet" href="C:/Program Files/sung/web/css/event.css">
+ </head>
+ <body>
+ 	<script>
+		function showDetail(){
+			document.querySelector('#desc').style.display = "block";
+			// 상세 설명 부분 화면에표시
+
+			document.querySelector('#detail').style.display = "none";
+			// 상세 설명 보기 버튼을 화면에서 감춤
+		}
+
+		function hideDetail(){
+			document.querySelector('#desc').style.display = "none";
+			// 상세 설명 부분 화면에감춤
+
+			document.querySelector('#detail').style.display = "block";
+			// 상세 설명 보기 버튼을 화면에서 표시
+		}
+	</script>
+	<div id="item">
+		<img src="C:/Program Files/sung/web/images/flower.jpg">
+		<button type="button" class="over" id="detail" onClick="showDetail()">상세설명보기</button>
+		<div id="desc" class="detail">
+			<h4>등심붓꽃</h4>
+			<p>북아메리카 원산으로 각지에서 관초로 ,,, 어쩌구 저쩌구.......블라블라......ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ...</p>
+			<button type="button" id="close" onClick="hideDetail()">상세설명닫기</button>
+		</div>
+	</div>
+ </body>
+</html>

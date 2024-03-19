@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Document</title>
+ </head>
+ <!--
+		즉시 실행 함수
+			- 한번만 실행할 함수
+			- 함수를 식 형태로 선언하므로 마지막에 세미콜론을 붙인다
+
+			(function(){
+			}());
+
+			function(매개변수){
+				명령
+			}
+			(function(매개변수){
+				명령
+			}(인수));
+ -->
+ <body>
+	<script>
+		(function(a, b){
+			sum = a+b;
+		}(100,200));
+		document.write(sum);
+	</script>
+ </body>
+</html>

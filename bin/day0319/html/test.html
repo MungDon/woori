@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Document</title>
+ </head>
+ <body>
+ <center>
+	<script>
+		var n = prompt("숫자를 입력해주세요");
+		var nInt = parseInt(n);
+		var result = 0;
+		if(nInt !== null){
+			calcSum(nInt);
+		}	
+		function calcSum(nInt){
+			document.write("<h1>입력한 숫자 : "+nInt+"</h1>");
+			for(let i = 1; i<=nInt; i++){
+				result += i;
+				document.write("<strong>"+result+"</strong> ");
+			}
+			document.write("<h1>"+nInt+"까지의 합은 : "+result+"입니다 </h1>");
+		}
+	</script>
+ </center>
+
+ </body>
+</html>
